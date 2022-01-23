@@ -1,0 +1,269 @@
+@import './header.css';
+@import './footer.css';
+@font-face {
+    font-family: mark-pro;
+    src: url('../fonts/Mark\ Pro.ttf');
+}
+
+@font-face {
+    font-family: mark-pro-medium;
+    src: url('../fonts/Mark\ Pro\ Medium.ttf');
+}
+
+@font-face {
+    font-family: mark-pro-bold;
+    src: url('../fonts/Mark\ Pro\ Bold.ttf');
+}
+
+@font-face {
+    font-family: mark-pro-heavy-regular;
+    src: url('../fonts/Mark\ Pro\ Heavy.ttf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: mark-pro;
+}
+
+body {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+
+ul {
+    list-style: none;
+    margin-bottom: 0px !important;
+    padding-left: 0px !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin-bottom: 0px !important;
+}
+
+section {
+    padding: 0 70px;
+}
+
+section h2 {
+    font-size: 24px;
+    font-family: mark-pro-bold;
+    line-height: 30.42px;
+    color: var(--secondaryColor);
+    margin-bottom: 0px !important;
+}
+
+:root {
+    --primaryColor: #19D3C5;
+    --secondaryColor: #1D252C;
+    --ligherColor: #DDF6F5;
+}
+
+.title {
+    color: var(--secondaryColor);
+    text-align: center;
+}
+
+.title_large {
+    font-size: 36px;
+    font-family: mark-pro-heavy-regular;
+    line-height: 46px;
+}
+
+.font_14 {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.font_16 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.button {
+    padding: 15px 40px;
+    border-radius: 40px;
+    border: none;
+}
+
+.button_primary {
+    color: #fff;
+    background-color: var(--primaryColor);
+    border: 1px solid var(--primaryColor);
+    transition: all .3s ease-in-out;
+}
+
+.button_primary:hover {
+    color: var(--primaryColor);
+    background-color: #fff;
+}
+
+.navigation_tab {
+    padding: 16px 70px;
+    background-color: #F6F6F6;
+}
+
+.navigation_tab a {
+    color: #4B4B4B;
+    text-decoration: underline;
+}
+
+.navigation_tab span.slash {
+    color: #C7C7C7;
+    margin: 0 9px;
+}
+
+.navigation_tab span:last-child {
+    color: #373737;
+}
+
+label {
+    color: #4D4D4D;
+    margin-bottom: 8px;
+    font-family: mark-pro-bold;
+}
+
+input,
+textarea,
+select {
+    border: none;
+    background-color: #F3F3F3;
+    height: 40px;
+    width: 240px;
+    border-radius: 4px;
+    text-indent: 12px;
+}
+
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    outline: none;
+}
+
+input::placeholder {
+    color: #B7B7B7;
+    font-weight: 400;
+}
+
+form button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 138px;
+    height: 44px;
+}
+
+.form_item {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    line-height: 17.75px;
+    padding: 0 35px 40px 0;
+}
+
+.message-icon {
+    position: fixed;
+    right: 70px;
+    bottom: 99px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    z-index: 1000;
+    border-radius: 17px;
+    background-color: var(--primaryColor);
+}
+
+
+/* mobile menu */
+
+.mobile_menu {
+    position: relative;
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.mobile_menu .menu_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 30px;
+    box-shadow: 0px 11px 38px rgba(0, 0, 0, 0.05);
+}
+
+.mobile_menu .menu_header .bar_icon {
+    cursor: pointer;
+}
+
+.mobile_menu .menu_body {
+    background-color: #fff;
+    box-shadow: 0px 11px 38px rgba(0, 0, 0, 0.05);
+    display: none;
+    position: absolute;
+    z-index: 10;
+    top: 71px;
+    width: 100%;
+}
+
+.mobile_menu .menu_body.show {
+    display: block;
+}
+
+.mobile_menu .menu_body nav ul li {
+    padding: 20px 30px;
+}
+
+.mobile_menu .menu_body nav ul li:not(:last-of-type) {
+    border-bottom: 1px solid #F0F0F0;
+}
+
+.mobile_menu .menu_body nav ul li a {
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: mark-pro-bold;
+    line-height: 18px;
+    color: #000;
+}
+
+@media screen and (max-width:576px) {
+    h2 {
+        font-size: 16px !important;
+        line-height: 20px !important;
+    }
+    .button {
+        padding: 12px 35px;
+    }
+    .font_16 {
+        font-size: 13.27px;
+        line-height: 17px;
+    }
+    .title_large {
+        font-size: 24px;
+        line-height: 30.42px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    header {
+        display: none;
+    }
+    .mobile_menu {
+        display: flex;
+    }
+    .navigation_tab {
+        padding: 16px 27px;
+    }
+}

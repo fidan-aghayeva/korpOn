@@ -1,0 +1,52 @@
+header {
+    padding: 35px 70px;
+}
+
+.about_us {
+    flex: 1 1 auto;
+    padding: 0;
+    min-height: 65vh;
+}
+
+.about_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 47px 70px 0 70px;
+}
+
+.about_content .about_text {
+    width: 50%;
+}
+
+.about_content p {
+    padding-top: 10px;
+    color: #555555;
+}
+
+.about_content .korpon_logo {
+    width: 50%;
+    text-align: center;
+    padding: 40px 0 170px 0;
+}
+
+@media screen and (max-width:576px) {
+    .about_content {
+        padding: 27px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .about_content .about_text {
+        width: 100%;
+    }
+    .about_content .korpon_logo {
+        display: none;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .about_content .korpon_logo {
+        text-align: right;
+    }
+}
