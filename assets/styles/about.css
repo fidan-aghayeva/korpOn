@@ -1,5 +1,6 @@
 header {
     padding: 35px 70px;
+    flex: 0 1 auto;
 }
 
 .about_us {

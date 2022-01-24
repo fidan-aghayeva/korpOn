@@ -206,6 +206,10 @@ header {
     color: #050D4E;
 }
 
+.faq_content .accordion-body a {
+    color: #050D4E;
+}
+
 @media screen and (max-width:576px) {
     .about_content .about_text {
         padding: 20px 27px 0 27px;
