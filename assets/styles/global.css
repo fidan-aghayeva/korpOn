@@ -266,4 +266,8 @@ form button {
     .navigation_tab {
         padding: 16px 27px;
     }
+    .message-icon {
+        bottom:49px;
+        right:16px;
+    }
 }
