@@ -158,6 +158,30 @@ section.advantages h2 {
     transform: translateX(30px);
 }
 
+.terminal_form .success {
+    width: 70%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 80px;
+}
+
+.terminal_form .success h5 {
+    font-size: 21.09px;
+    font-weight: bold;
+    line-height: 26.73px;
+    margin-top: 32.81px;
+    margin-bottom: 0px;
+    color: #4D4D4D;
+}
+
+.terminal_form .form_content .success p {
+    color: #a4a4a4;
+    font-size: 16.4px;
+    line-height: 20.79px;
+}
+
 .map {
     padding: 52px 70px;
     background-color: #FCFCFC;
@@ -218,6 +242,9 @@ section.advantages h2 {
     .terminal_form .form_content form>div {
         flex-direction: column;
     }
+    .terminal_form .success img {
+        content: url('../images/Frame 61.png');
+    }
     .form_item {
         padding: 0 0 22px 0;
     }
@@ -241,5 +268,8 @@ section.advantages h2 {
     }
     .terminal_form .section_img {
         display: none;
+    }
+    .terminal_form .success {
+        width: 100%;
     }
 }

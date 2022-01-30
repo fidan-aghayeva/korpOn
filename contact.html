@@ -107,18 +107,18 @@
                 <p>
                     Aşağıdaki formu dolduraraq bizimlə əlaqə saxlaya bilərsiniz. Sizə 48 saat içində geri dönüş edəcəyik
                 </p>
-                <form class="requires-validation" novalidate>
+                <form class="requires-validation" id="contactForm" novalidate>
                     <div>
                         <div class="form_item">
                             <label for="name">Adınız Soyadınız</label>
-                            <input type="text" name="email" placeholder="Adınız və soyadınız" required />
+                            <input type="text" name="fullName" id="fullName" placeholder="Adınız və soyadınız" required />
                             <div class="invalid-feedback">
                                 Zəhmət olmasa ad, soyadı daxil edin
                             </div>
                         </div>
                         <div class="form_item">
-                            <label for="name">Müraciət səbəbi</label>
-                            <select required>
+                            <label for="applicationReason">Müraciət səbəbi</label>
+                            <select required id="applicationReason">
                   <option value="" disabled selected hidden
                     >Müraciət səbəbi</option
                   >
@@ -132,14 +132,14 @@
                         </div>
                         <div class="form_item">
                             <label for="email">E-mail adresi</label>
-                            <input type="email" name="email" placeholder="E-poçt adresiniz" required />
+                            <input type="email" name="email" id="email" placeholder="E-poçt adresiniz" required />
                             <div class="invalid-feedback">
                                 Zəhmət olmasa e-maili düzgün daxil edin
                             </div>
                         </div>
                         <div class="form_item">
                             <label for="phone">Telefon nömrəsi</label>
-                            <input type="phone" name="phone" placeholder="+994" required maxlength="9" minlength="9" pattern="[0-9]{2}[0-9]{3}[0-9]{2}[0-9]{2}" />
+                            <input type="phone" name="phone" id="phone" placeholder="501112233" required maxlength="9" minlength="9" pattern="[0-9]{2}[0-9]{3}[0-9]{2}[0-9]{2}" />
                             <div class="invalid-feedback">
                                 Zəhmət olmasa nömrəni düzgün daxil edin
                             </div>
@@ -147,8 +147,8 @@
                     </div>
                     <div class="textarea_box">
                         <div class="form_item">
-                            <label for="phone">Qeydiniz</label>
-                            <textarea name="note" cols="30" rows="10" placeholder="Müraciətinizlə bağlı qeydiniz.."></textarea>
+                            <label for="note">Qeydiniz</label>
+                            <textarea name="note" id="note" cols="30" rows="10" placeholder="Müraciətinizlə bağlı qeydiniz.."></textarea>
                         </div>
                     </div>
                     <div class="d-flex justify-content-end">
@@ -207,7 +207,7 @@
     <script src="./assets/bootstrap/bootstrap.min.js"></script>
     <script src="./assets/jquery/jquery.min.js"></script>
     <script src="./assets/js/main.js"></script>
-    <script src="/assets/js/forms.js"></script>
+    <script src="/assets/js/contactForm.js"></script>
 </body>
 
 </html>

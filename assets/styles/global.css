@@ -101,9 +101,9 @@ section h2 {
     transition: all .3s ease-in-out;
 }
 
-.button_primary:hover {
-    color: var(--primaryColor);
-    background-color: #fff;
+.button.disable {
+    opacity: 0.6;
+    pointer-events: none;
 }
 
 .navigation_tab {
@@ -267,7 +267,7 @@ form button {
         padding: 16px 27px;
     }
     .message-icon {
-        bottom:49px;
-        right:16px;
+        bottom: 49px;
+        right: 16px;
     }
 }

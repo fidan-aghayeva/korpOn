@@ -186,41 +186,50 @@
     <section class="terminal_form">
       <div class="form_content">
         <h2>KorpON terminallarına ev sahibliyi edin</h2>
-        <p>Cihazları öz sahənizdə yerləşdirmək üçün müraciət edin.</p>
-        <form class="requires-validation" novalidate>
-          <div>
-            <div class="form_item">
-              <label for="email">E-mail adresi</label>
-              <input
-                type="email"
-                name="email"
-                placeholder="E-poçt adresiniz"
-                required
-                id="email"
-              />
-              <div class="invalid-feedback">
-                Zəhmət olmasa e-maili düzgün daxil edin
+        <div class="form_body">
+          <p>Cihazları öz sahənizdə yerləşdirmək üçün müraciət edin.</p>
+          <form class="requires-validation" id="terminalForm" novalidate>
+            <div>
+              <div class="form_item">
+                <label for="email">E-mail adresi</label>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="E-poçt adresiniz"
+                  required
+                  id="email"
+                />
+                <div class="invalid-feedback">
+                  Zəhmət olmasa e-maili düzgün daxil edin
+                </div>
+              </div>
+              <div class="form_item">
+                <label for="phone">Telefon nömrəsi</label>
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="501112233"
+                  required
+                  id="phone"
+                  maxlength="9"
+                  minlength="9"
+                  pattern="[0-9]{2}[0-9]{3}[0-9]{2}[0-9]{2}"
+                />
+                <div class="invalid-feedback">
+                  Zəhmət olmasa nömrəni düzgün daxil edin
+                </div>
               </div>
             </div>
-            <div class="form_item">
-              <label for="phone">Telefon nömrəsi</label>
-              <input
-                type="tel"
-                name="phone"
-                placeholder="+994"
-                required
-                id="phone"
-                maxlength="9"
-                minlength="9"
-                pattern="[0-9]{2}[0-9]{3}[0-9]{2}[0-9]{2}"
-              />
-              <div class="invalid-feedback">
-                Zəhmət olmasa nömrəni düzgün daxil edin
-              </div>
-            </div>
-          </div>
-          <button type="submit" class="button button_primary">Göndər</button>
-        </form>
+            <button type="submit" class="button button_primary">
+              Göndər
+            </button>
+          </form>
+        </div>
+        <div class="success">
+          <img src="./assets/images/Frame 60.png" alt="" />
+          <h5>Təşəkkürlər. Mesajınız göndərildi!</h5>
+          <p>Tezliklə sizinlə əlaqə saxlayacağıq.</p>
+        </div>
       </div>
       <div class="section_img">
         <img src="./assets/images/terminal.png" alt="" />
@@ -282,7 +291,7 @@
         <script src="./assets/owl-carousel/owl.carousel.min.js"></script>
         <script src="./assets/js/carousel.js"></script>
         <script src="./assets/js/main.js"></script>
-        <script src="./assets/js/forms.js"></script>
+        <script src="./assets/js/terminalForm.js"></script>
 </body>
 
 </html>
