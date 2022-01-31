@@ -100,10 +100,13 @@ footer .secondary_footer span:last-child {
 
 @media screen and (max-width:576px) {
     footer .primary_footer {
-        padding: 24px 27px;
+        padding: 24px 27px 55px 27px;
     }
     footer .primary_footer .contact_section {
         flex-direction: column;
+    }
+    footer .primary_footer nav ul li:not(:last-of-type) {
+        padding-bottom: 16px;
     }
     footer .primary_footer .contact_section .social_icons {
         padding-top: 25px;

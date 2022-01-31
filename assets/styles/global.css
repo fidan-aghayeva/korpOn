@@ -172,7 +172,7 @@ form button {
 .message-icon {
     position: fixed;
     right: 70px;
-    bottom: 99px;
+    bottom: 125px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -267,7 +267,7 @@ form button {
         padding: 16px 27px;
     }
     .message-icon {
-        bottom: 49px;
+        bottom: 55px;
         right: 16px;
     }
 }

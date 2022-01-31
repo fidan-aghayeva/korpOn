@@ -18,7 +18,7 @@ async function terminalFormFunc () {
   submitBtn.classList.add('disable')
   const formData = {
     email: terminalFormEmail?.value,
-    phone: `+994${terminalFormPhone?.value}`
+    phone: terminalFormPhone?.value
   }
 
   const response = await fetch(

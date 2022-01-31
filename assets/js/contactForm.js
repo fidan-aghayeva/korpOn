@@ -26,7 +26,7 @@ async function contactFormFunc () {
     applicationReason:
       applicationReason?.options[applicationReason.selectedIndex].text,
     email: email?.value,
-    phone: `+994${phone?.value}`,
+    phone: phone?.value,
     note: note?.value
   }
 
