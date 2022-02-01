@@ -6,7 +6,7 @@ header {
 .about_us {
     flex: 1 1 auto;
     padding: 0;
-    min-height: 65vh;
+    /* min-height: 65vh; */
 }
 
 .about_content {
