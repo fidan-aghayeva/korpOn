@@ -1,0 +1,19 @@
+header {
+    padding: 35px 70px;
+    flex: 0 1 auto;
+}
+
+.map {
+    flex: 1 1 auto;
+    padding: 0;
+}
+
+.map .map_container {
+    padding: 0 70px 60px 70px;
+}
+
+@media screen and (max-width:576px) {
+    .map .map_container {
+        padding: 0 27px 60px 27px;
+    }
+}

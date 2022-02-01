@@ -184,6 +184,27 @@ form button {
 }
 
 
+/* map */
+
+.map {
+    padding: 52px 70px;
+    background-color: #FCFCFC;
+}
+
+.map .map_content {
+    margin-top: 60px;
+    height: 327px;
+    overflow-y: hidden;
+    position: relative;
+}
+
+.map .map_content iframe {
+    position: absolute;
+    top: -55px;
+    left: 0;
+}
+
+
 /* mobile menu */
 
 .mobile_menu {
@@ -253,6 +274,12 @@ form button {
     .title_large {
         font-size: 24px;
         line-height: 30.42px;
+    }
+    .map {
+        padding: 30px 27px 73px 27px;
+    }
+    .map .map_content {
+        margin-top: 30px;
     }
 }
 

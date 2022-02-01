@@ -182,24 +182,6 @@ section.advantages h2 {
     line-height: 20.79px;
 }
 
-.map {
-    padding: 52px 70px;
-    background-color: #FCFCFC;
-}
-
-.map .map_content {
-    margin-top: 60px;
-    height: 327px;
-    overflow-y: hidden;
-    position: relative;
-}
-
-.map .map_content iframe {
-    position: absolute;
-    top: -55px;
-    left: 0;
-}
-
 @media screen and (max-width:576px) {
     .header_and_map {
         padding: 0 27px;
@@ -263,12 +245,6 @@ section.advantages h2 {
     }
     .form_item input {
         width: 100%;
-    }
-    .map {
-        padding: 30px 27px 73px 27px;
-    }
-    .map .map_content {
-        margin-top: 30px;
     }
 }
 
