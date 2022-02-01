@@ -198,6 +198,10 @@ header {
     color: #050D4E;
     background-color: #fff;
     box-shadow: none;
+    border-bottom: none;
+}
+
+.faq_content .accordion-button[aria-expanded='true'] {
     border-bottom: 1px solid #D7E7FF;
 }
 

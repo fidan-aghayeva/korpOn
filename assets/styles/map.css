@@ -9,7 +9,7 @@ header {
 }
 
 .map .map_container {
-    padding: 0 70px 60px 70px;
+    padding: 47px 70px 60px 70px;
 }
 
 @media screen and (max-width:576px) {

@@ -31,9 +31,27 @@ header {
     padding: 40px 0 170px 0;
 }
 
+.terminals {
+    background: #F3F3F3;
+    border: 2px solid #D1D1D1;
+    border-radius: 7px;
+    margin-top: 15px;
+    padding: 19px 16px;
+    color: #5A5A5A;
+    font-weight: 700;
+}
+
+.terminals a,
+.terminals a:hover {
+    color: #5A5A5A;
+}
+
 @media screen and (max-width:576px) {
     .about_content {
         padding: 27px;
+    }
+    .terminals {
+        line-height: 22px;
     }
 }
 
