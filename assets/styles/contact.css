@@ -57,6 +57,7 @@ header {
 
 .contact_form {
     padding: 38px 160px 20px 54px;
+    flex: 1;
 }
 
 .contact_form p {
@@ -100,6 +101,10 @@ header {
 .contact_form form select:focus-visible,
 .contact_form form textarea:focus-visible {
     outline: none !important;
+}
+
+.contact_form .success {
+    width: 100%;
 }
 
 @media screen and (max-width: 576px) {

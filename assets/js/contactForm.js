@@ -45,7 +45,10 @@ async function contactFormFunc () {
     .then(res => res.json())
     .then(data => data)
 
-  if (!response.success) {
+  if (response.success) {
+    document.querySelector('.contact_form .form_body').style.display = 'none'
+    document.querySelector('.contact_form .success').style.display = 'flex'
+  } else {
     alert('Uğursuz əməliyyat!')
   }
   submitBtn.classList.remove('disable')

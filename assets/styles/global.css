@@ -259,6 +259,32 @@ form button {
     color: #000;
 }
 
+/* form success */
+.success {
+    width: 70%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.success h5 {
+    font-size: 21.09px;
+    font-weight: bold;
+    line-height: 26.73px;
+    margin-top: 32.81px;
+    margin-bottom: 0px;
+    color: #4D4D4D;
+}
+
+.success p {
+    color: #a4a4a4;
+    font-size: 16.4px;
+    line-height: 20.79px;
+}
+
 @media screen and (max-width:576px) {
     h2 {
         font-size: 16px !important;
