@@ -22,7 +22,7 @@ async function terminalFormFunc () {
   }
 
   const response = await fetch(
-    'http://157.90.55.174/api/ContactForm/InsertRequestTerminal',
+    'https://api.korpon.az/api/ContactForm/InsertRequestTerminal',
     {
       method: 'post',
       body: JSON.stringify(formData),

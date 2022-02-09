@@ -33,7 +33,7 @@ async function contactFormFunc () {
   console.log(formData)
 
   const response = await fetch(
-    'http://157.90.55.174/api/ContactForm/InsertContactForm',
+    'https://api.korpon.az/api/ContactForm/InsertContactForm',
     {
       method: 'post',
       body: JSON.stringify(formData),
