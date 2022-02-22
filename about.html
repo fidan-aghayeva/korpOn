@@ -2,11 +2,26 @@
 <html lang="en">
 
 <head>
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                "gtm.start": new Date().getTime(),
+                event: "gtm.js",
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != "dataLayer" ? "&l=" + l : "";
+            j.async = true;
+            j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, "script", "dataLayer", "GTM-WRL2KD8");
+    </script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KorpOn</title>
-    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="./assets/images/logo.svg" />
     <link rel="stylesheet" href="./assets/styles/global.css" />
     <link rel="stylesheet" href="./assets/styles/about.css" />
     <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
@@ -15,6 +30,8 @@
 </head>
 
 <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WRL2KD8" height="0" width="0"
+            style="display: none; visibility: hidden"></iframe></noscript>
     <header>
         <div class="header_container">
             <div>
@@ -69,15 +86,20 @@
             <div class="about_text">
                 <h2>Şirkət haqqında</h2>
                 <p class="font_16">
-                    KorpON MMC 2021-ci ildə təsis edilmişdir. Şirkətin əsas məqsədi hüquqi və fiziki şəxslərin iri həcmli, nağd ödəniş və inkassasiya proseslərini optimallaşdırmaqdır. Eyniadlı ticarət nişanı ilə təmsil olunan KorpON şəbəkəsinin terminalları Bakı şəhəri üzrə
-                    50-dən çox ünvanda, PASHA Bank şəbəkəsinin, həmçinin Grand, Rahat, Bazarstore, Bolmart supermarket şəbəkələrinin müxtəlif filiallarında müştərilərin ixtiyarına verilib.
+                    KorpON MMC 2021-ci ildə təsis edilmişdir. Şirkətin əsas məqsədi
+                    hüquqi və fiziki şəxslərin iri həcmli, nağd ödəniş və inkassasiya
+                    proseslərini optimallaşdırmaqdır. Eyniadlı ticarət nişanı ilə təmsil
+                    olunan KorpON şəbəkəsinin terminalları Bakı şəhəri üzrə 50-dən çox
+                    ünvanda, PASHA Bank şəbəkəsinin, həmçinin Bravo, Araz, Grand, Rahat,
+                    Bazarstore, Bolmart supermarket şəbəkələrinin müxtəlif filiallarında
+                    və iri ticarət mərkəzlərində (Gənclik Mall) müştərilərin ixtiyarına
+                    verilib
                 </p>
                 <div class="terminals font_14">
                     KorpON terminallarının ünvanları üçün
-                    <a href="./map.html" class="font_14" target="_blank">xəritəyə keçid edin</a
-            >
-            və ya
-            <a href="" class="font_14" download>tam siyahını yükləyin.</a>
+                    <a href="./map.html" class="font_14" target="_blank">xəritəyə keçid edin</a>
+                    və ya
+                    <a href="" class="font_14" download>tam siyahını yükləyin.</a>
                 </div>
             </div>
             <div class="korpon_logo">
@@ -123,12 +145,8 @@
             </div>
         </div>
         <div class="secondary_footer">
-            <span>
-          2021 © Bütün hüquqlar
-        </span>
-            <span>
-          Positive MMC tərəfindən qorunur.
-        </span>
+            <span> 2021 © Bütün hüquqlar </span>
+            <span> Positive MMC tərəfindən qorunur. </span>
         </div>
     </footer>
 
