@@ -1,8 +1,8 @@
 # Business website of KorpOn company
 
-<img src='/korpOn.png' alt='website' height='200'>
+<img src='/korpOn.png' alt='website'>
 
-### This company located in Azerbaijan. The main goal of the company is to optimize large-scale cash payment and collection processes of legal entities and individuals.
+### *This company located in Azerbaijan. The main goal of the company is to optimize large-scale cash payment and collection processes of legal entities and individuals.*
 
  
 
